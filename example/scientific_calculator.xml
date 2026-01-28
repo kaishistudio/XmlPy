@@ -3,7 +3,7 @@
 
     <frame id="main_frame" bg="#34495e" x="10" y="10" width="430" height="630">
 
-        <label id="title_label" text="科学计算器"
+        <label id="title_label" text="scientific calculator"
                fg="black" bg="#34495e" x="150" y="10"/>
 
         <frame id="display_frame" bg="#1a252f" x="20" y="50" width="390" height="60">
@@ -11,7 +11,7 @@
                    bg="#1a252f" justify="right" x="10" y="15" show=""/>
         </frame>
 
-        <label id="angle_label" text="角度: DEG"
+        <label id="angle_label" text="DEG"
                fg="#bdc3c7" bg="#34495e" x="20" y="120"/>
 
         <frame id="scientific_frame" bg="#34495e" x="20" y="140" width="390" height="100">
