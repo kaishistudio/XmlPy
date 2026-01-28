@@ -2340,4 +2340,5 @@ def XmlInit_string(xml_data,globals):
     except ET.ParseError as e:
         print(f"XML parsing error: {e}")
         root = tk.Tk()
+
     root.mainloop()
