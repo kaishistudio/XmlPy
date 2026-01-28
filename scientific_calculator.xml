@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window title="科学计算器" geometry="450x650" bg="#2c3e50">
+
+    <frame id="main_frame" bg="#34495e" x="10" y="10" width="430" height="630">
+
+        <label id="title_label" text="科学计算器"
+               fg="black" bg="#34495e" x="150" y="10"/>
+
+        <frame id="display_frame" bg="#1a252f" x="20" y="50" width="390" height="60">
+            <entry id="display" width="20" fg="white" font="Arial 24"
+                   bg="#1a252f" justify="right" x="10" y="15" show=""/>
+        </frame>
+
+        <label id="angle_label" text="角度: DEG"
+               fg="#bdc3c7" bg="#34495e" x="20" y="120"/>
+
+        <frame id="scientific_frame" bg="#34495e" x="20" y="140" width="390" height="100">
+            <button id="btn_sin" text="sin" x="10" y="10" width="8" height="2"
+                    bg="#e74c3c" fg="black">
+                <Click_command>sin</Click_command>
+            </button>
+            <button id="btn_cos" text="cos" x="80" y="10" width="8" height="2"
+                    bg="#e74c3c" fg="black">
+                <Click_command>cos</Click_command>
+            </button>
+            <button id="btn_tan" text="tan" x="150" y="10" width="8" height="2"
+                    bg="#e74c3c" fg="black">
+                <Click_command>tan</Click_command>
+            </button>
+            <button id="btn_asin" text="asin" x="220" y="10" width="8" height="2"
+                    bg="#e67e22" fg="black">
+                <Click_command>asin</Click_command>
+            </button>
+            <button id="btn_acos" text="acos" x="290" y="10" width="8" height="2"
+                    bg="#e67e22" fg="black">
+                <Click_command>acos</Click_command>
+            </button>
+            <button id="btn_atan" text="atan" x="10" y="55" width="8" height="2"
+                    bg="#e67e22" fg="black">
+                <Click_command>atan</Click_command>
+            </button>
+            <button id="btn_log" text="log" x="80" y="55" width="8" height="2"
+                    bg="#f39c12" fg="black">
+                <Click_command>log</Click_command>
+            </button>
+            <button id="btn_ln" text="ln" x="150" y="55" width="8" height="2"
+                    bg="#f39c12" fg="black">
+                <Click_command>ln</Click_command>
+            </button>
+            <button id="btn_sqrt" text="√" x="220" y="55" width="8" height="2"
+                    bg="#f39c12" fg="black">
+                <Click_command>sqrt</Click_command>
+            </button>
+            <button id="btn_power" text="x²" x="290" y="55" width="8" height="2"
+                    bg="#f39c12" fg="black">
+                <Click_command>square</Click_command>
+            </button>
+        </frame>
+
+        <frame id="memory_frame" bg="#34495e" x="20" y="250" width="390" height="50">
+            <button id="btn_mc" text="MC" x="10" y="10" width="6" height="2"
+                    bg="#95a5a6" fg="black">
+                <Click_command>memory_clear</Click_command>
+            </button>
+            <button id="btn_mr" text="MR" x="70" y="10" width="6" height="2"
+                    bg="#95a5a6" fg="black">
+                <Click_command>memory_recall</Click_command>
+            </button>
+            <button id="btn_m_plus" text="M+" x="130" y="10" width="6" height="2"
+                    bg="#95a5a6" fg="black">
+                <Click_command>memory_add</Click_command>
+            </button>
+            <button id="btn_m_minus" text="M-" x="190" y="10" width="6" height="2"
+                    bg="#95a5a6" fg="black">
+                <Click_command>memory_subtract</Click_command>
+            </button>
+            <button id="btn_ms" text="MS" x="250" y="10" width="6" height="2"
+                    bg="#95a5a6" fg="black">
+                <Click_command>memory_store</Click_command>
+            </button>
+            <button id="btn_angle" text="DEG/RAD" x="310" y="10" width="10" height="2"
+                    bg="#3498db" fg="black">
+                <Click_command>toggle_angle</Click_command>
+            </button>
+        </frame>
+
+        <frame id="numbers_frame" bg="#34495e" x="20" y="310" width="250" height="300">
+            <button id="btn_7" text="7" x="10" y="10" width="5" height="2"
+                    bg="#ecf0f1" fg="black">
+                <Click_command>append_7</Click_command>
+            </button>
+            <button id="btn_8" text="8" x="90" y="10" width="5" height="2"
+                    bg="#ecf0f1" fg="black">
+                <Click_command>append_8</Click_command>
+            </button>
+            <button id="btn_9" text="9" x="170" y="10" width="5" height="2"
+                    bg="#ecf0f1" fg="black">
+                <Click_command>append_9</Click_command>
+            </button>
+            <button id="btn_divide" text="÷" x="10" y="70" width="5" height="2"
+                    bg="#3498db" fg="black">
+                <Click_command>divide</Click_command>
+            </button>
+            <button id="btn_4" text="4" x="90" y="70" width="5" height="2"
+                    bg="#ecf0f1" fg="black">
+                <Click_command>append_4</Click_command>
+            </button>
+            <button id="btn_5" text="5" x="170" y="70" width="5" height="2"
+                    bg="#ecf0f1" fg="black">
+                <Click_command>append_5</Click_command>
+            </button>
+            <button id="btn_multiply" text="×" x="10" y="130" width="5" height="2"
+                    bg="#3498db" fg="black">
+                <Click_command>multiply</Click_command>
+            </button>
+            <button id="btn_1" text="1" x="90" y="130" width="5" height="2"
+                    bg="#ecf0f1" fg="black">
+                <Click_command>append_1</Click_command>
+            </button>
+            <button id="btn_2" text="2" x="170" y="130" width="5" height="2"
+                    bg="#ecf0f1" fg="black">
+                <Click_command>append_2</Click_command>
+            </button>
+            <button id="btn_subtract" text="-" x="10" y="190" width="5" height="2"
+                    bg="#3498db" fg="black">
+                <Click_command>subtract</Click_command>
+            </button>
+            <button id="btn_0" text="0" x="90" y="190" width="5" height="2"
+                    bg="#ecf0f1" fg="black">
+                <Click_command>append_0</Click_command>
+            </button>
+            <button id="btn_decimal" text="." x="170" y="190" width="5" height="2"
+                    bg="#ecf0f1" fg="black">
+                <Click_command>append_decimal</Click_command>
+            </button>
+            <button id="btn_add" text="+" x="10" y="250" width="5" height="2"
+                    bg="#3498db" fg="black">
+                <Click_command>add</Click_command>
+            </button>
+            <button id="btn_negate" text="±" x="90" y="250" width="5" height="2"
+                    bg="#95a5a6" fg="black">
+                <Click_command>negate</Click_command>
+            </button>
+            <button id="btn_equals" text="=" x="170" y="250" width="5" height="2"
+                    bg="#27ae60" fg="black">
+                <Click_command>equals</Click_command>
+            </button>
+        </frame>
+
+        <frame id="operations_frame" bg="#34495e" x="280" y="310" width="130" height="300">
+            <button id="btn_clear" text="C" x="10" y="10" width="4" height="2"
+                    bg="#e74c3c" fg="black">
+                <Click_command>clear</Click_command>
+            </button>
+            <button id="btn_ce" text="CE" x="70" y="10" width="4" height="2"
+                    bg="#e74c3c" fg="black">
+                <Click_command>clear_entry</Click_command>
+            </button>
+            <button id="btn_backspace" text="⌫" x="10" y="70" width="12" height="2"
+                    bg="#e67e22" fg="black">
+                <Click_command>backspace</Click_command>
+            </button>
+            <button id="btn_cube" text="x³" x="10" y="130" width="4" height="2"
+                    bg="#f39c12" fg="black">
+                <Click_command>cube</Click_command>
+            </button>
+            <button id="btn_reciprocal" text="1/x" x="70" y="130" width="4" height="2"
+                    bg="#f39c12" fg="black">
+                <Click_command>reciprocal</Click_command>
+            </button>
+            <button id="btn_factorial" text="n!" x="10" y="190" width="4" height="2"
+                    bg="#f39c12" fg="black">
+                <Click_command>factorial</Click_command>
+            </button>
+            <button id="btn_mod" text="%" x="70" y="190" width="4" height="2"
+                    bg="#3498db" fg="black">
+                <Click_command>modulo</Click_command>
+            </button>
+            <button id="btn_pi" text="π" x="10" y="250" width="4" height="2"
+                    bg="#9b59b6" fg="black">
+                <Click_command>pi</Click_command>
+            </button>
+            <button id="btn_e" text="e" x="70" y="250" width="4" height="2"
+                    bg="#9b59b6" fg="black">
+                <Click_command>e</Click_command>
+            </button>
+        </frame>
+    </frame>
+</window>
